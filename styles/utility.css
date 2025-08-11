@@ -1,22 +1,30 @@
-.header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
+.grid{
+  display: grid;
 }
-#tags{
-  display: flex;
-  align-items: flex-start;
+.grid-flow-col{
+  grid-auto-flow: column;
+}
+.grid-cols-2{
+  grid-template-columns: 1fr 1fr ;
+}
+.gap-8{
+  gap: 8px;
+}
+.gap-15{
+  gap: 15px;
+}
+.gap-16{
   gap: 16px;
 }
-.tag{
-  display: flex;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-
-  border-radius: 999px;
-  background: var(--Base-gray-400, #292C34);
+.gap-32{
+  gap: 32px;
+}
+.text-2xl{
+  font: var(--h1);
+}
+.text-xl{
+  font: var(--h2);
+}
+.text-lg{
+  font: var(--h3);
 }
