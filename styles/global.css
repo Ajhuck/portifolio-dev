@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 :root{
-
+  font-family: 'Asap', sans-serif;
+  --font-family-asap:'Asap', sans-serif;
+  --font-family-inco: 'Inconsolata', sans-serif;
+  --font-family-maven: 'Maven Pro', sans-serif;
   --red: #e3646e;
   --purple: #bb72e9;
   --blue: #3996db;
@@ -17,27 +20,31 @@
   --gray-500: #16181d;
   --gray-600: #0d0e11;
   
-  --h1: Bold 56px/120% var(--font-family-asap);
-  --h2: Bold 24px/120% var(--font-family-asap);
-  --h3: Bold 16px/120% var(--font-family-asap);
-  --subtitle: Regular 20px/120% var(--font-family-inco);
-  --text-md: Regular 16px/140% var(--font-family-maven);
-  --text-sm: Regular 14px/140% var(--font-family-maven);
+  --h1: 900 56px/120% var(--font-family-asap);
+  --h2: 900 24px/120% var(--font-family-asap);
+  --h3: "Bold" 16px/120% var(--font-family-asap);
+  --subtitle: "Regular" 20px/120% var(--font-family-inco);
+  --text-md: "Regular" 16px/140% var(--font-family-maven);
+  --text-sm: "Regular" 14px/140% var(--font-family-maven);
+}
+h1{
+  font: var(--h1);
 }
 body{
-  background-color:var(--gray-500);
+  background-color:var(--gray-600);
   color: var(--gray-100);
   font: var(--text-sm);
 }
 #background-color{
-  background-color: var(--gray-500);
+  background-color: var(--gray-600);
 }
 .container{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 1040px;
   margin-inline: auto;
-  padding-inline: 56px;
+  padding-inline: 146px;
 }
 h1,h2,h3{
   font: inherit;
@@ -58,10 +65,11 @@ span{
   gap: 8px;
   align-self: stretch;
 }
-#tags{
+.tags, .cards{
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .tag{
   display: flex;
@@ -72,4 +80,16 @@ span{
 
   border-radius: 999px;
   background: var(--gray-400);
+}
+.card{
+  display: flex;
+  width: 280px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+
+  border-radius: 12px;
+  border: 2px solid var(--gray-500);
 }

@@ -10,14 +10,14 @@
 .gap-8{
   gap: 8px;
 }
-.gap-15{
-  gap: 15px;
+.gap-80{
+  gap: 80px;
 }
 .gap-16{
   gap: 16px;
 }
-.gap-32{
-  gap: 32px;
+.gap-24{
+  gap: 24px;
 }
 .subtitle{
   font: var(--subtitle);
