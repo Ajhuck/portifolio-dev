@@ -1,0 +1,22 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+#tags{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.tag{
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 999px;
+  background: var(--Base-gray-400, #292C34);
+}

@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 :root{
-  --font-family-asap: Asap, sans-serif;
-  --font-family-inco: Inconsolata, sans-serif;
-  --font-family-maven: Maven Pro, sans-serif;
-
+  
   --red: #e3646e;
   --purple: #bb72e9;
   --blue: #3996db;
@@ -33,6 +30,9 @@ body{
   color: var(--gray-100);
   font: var(--text-sm);
 }
+#background-color{
+  background-color: var(--gray-500);
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -43,4 +43,12 @@ body{
 h1,h2,h3{
   font: inherit;
   color: var(--text-color-primary);
+}
+p{
+  font: var(--text-sm);
+  color: var(--gray-300);
+}
+span{
+  font: var(--text-md);
+  color: var(--gray-200);
 }
