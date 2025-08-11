@@ -74,5 +74,5 @@ span{
   gap: 8px;
 
   border-radius: 999px;
-  background: var(--gray-400, #292C34);
+  background: var(--gray-400);
 }
