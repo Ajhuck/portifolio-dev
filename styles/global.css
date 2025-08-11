@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 :root{
-  --font-family-asap: "Asap", sans-serif;
-  --font-family-inco: "Inconsolata", sans-serif;
-  --font-family-maven: "Maven Pro", sans-serif;
 
   --red: #e3646e;
   --purple: #bb72e9;
