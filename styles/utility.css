@@ -1,11 +1,12 @@
 .grid{
   display: grid;
+  justify-content: center;
 }
 .grid-flow-col{
   grid-auto-flow: column;
 }
-.grid-cols-2{
-  grid-template-columns: 1fr 1fr ;
+.grid-cols-3{
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .gap-8{
   gap: 8px;
@@ -19,9 +20,19 @@
 .gap-24{
   gap: 24px;
 }
+.gap-56{
+  gap: 56px;
+}
+.wrap{
+  flex-wrap: wrap;
+}
 .subtitle{
   font: var(--subtitle);
   color: var(--red);
+}
+.subtitle-gray{
+  font: var(--subtitle);
+  color: var(--gray-200);
 }
 .text-md{
   font: var(--text-md);
