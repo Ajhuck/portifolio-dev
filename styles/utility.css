@@ -4,6 +4,7 @@
 }
 .grid-flow-col{
   grid-auto-flow: column;
+  align-items:center;
 }
 .grid-cols-3{
   grid-template-columns: 1fr 1fr 1fr;
@@ -13,6 +14,9 @@
 }
 .gap-80{
   gap: 80px;
+}
+.gap-12{
+  gap: 12px;
 }
 .gap-16{
   gap: 16px;
@@ -25,18 +29,4 @@
 }
 .wrap{
   flex-wrap: wrap;
-}
-.subtitle{
-  font: var(--subtitle);
-  color: var(--red);
-}
-.subtitle-gray{
-  font: var(--subtitle);
-  color: var(--gray-200);
-}
-.text-md{
-  font: var(--text-md);
-}
-.text-sm{
-  font: var(--text-sm);
 }

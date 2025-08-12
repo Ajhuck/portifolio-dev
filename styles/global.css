@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 :root{
-  font-family: 'Asap', sans-serif;
-  --font-family-asap:'Asap', sans-serif;
-  --font-family-inco: 'Inconsolata', sans-serif;
-  --font-family-maven: 'Maven Pro', sans-serif;
   --red: #e3646e;
   --purple: #bb72e9;
   --blue: #3996db;
@@ -20,12 +16,17 @@
   --gray-500: #16181d;
   --gray-600: #0d0e11;
   
-  --h1: 900 56px/120% var(--font-family-asap);
-  --h2: 900 24px/120% var(--font-family-asap);
-  --h3: "Bold" 16px/120% var(--font-family-asap);
-  --subtitle: "Regular" 20px/120% var(--font-family-inco);
-  --text-md: "Regular" 16px/140% var(--font-family-maven);
-  --text-sm: "Regular" 14px/140% var(--font-family-maven);
+  --asap-font: 'Asap';
+  --h1: 800 56px/120% var(--asap-font);
+  --h2: 800 24px/120% var(--asap-font);
+  --h4: 800 16px/120% var(--asap-font);
+
+  --inco-font: 'Inconsolata', monospace;
+  --h3: 400 20px/120% var(--inco-font);
+
+  --maven-font: 'Maven Pro', sans-serif;
+  --p: 400 16px/140% var(--maven-font);
+  --h5: 400 14px/140% var(--maven-font);
 }
 .title-lg{
   font: var(--h1);
@@ -33,13 +34,35 @@
 .title-md{
   font: var(--h2);
 }
+.subtitle{
+  font: var(--h3);
+}
+.title-sm{
+  font: var(--h4);
+}
+.text-sm{
+  font: var(--h5);
+}
 body{
-  background-color:var(--gray-600);
-  color: var(--gray-100);
-  font: var(--text-sm);
+  background-color:var(--gray-500);
 }
 #background-color{
+  background-color: var(--gray-500);
+}
+#background-color-dark{
+  padding-top: 88px;
+  padding-bottom: 120px;
+  height: 480px;
   background-color: var(--gray-600);
+}
+#background-intro{  
+  background-image: url("/assets/Background_Intro.png");
+  background-size: cover;
+}
+#background-contacts{
+  height: 787px;
+  background-image: url("/assets/Background_Contacts.png");
+  background-size: cover;
 }
 .container{
   display: flex;
@@ -54,7 +77,7 @@ h1,h2,h3{
   color: var(--gray-100);
 }
 p{
-  font: var(--text-sm);
+  font: var(--p);
   color: var(--gray-300);
 }
 span{
@@ -67,4 +90,8 @@ span{
   align-items: center;
   gap: 8px;
   align-self: stretch;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }

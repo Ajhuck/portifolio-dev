@@ -1,19 +1,32 @@
 #info{
-  margin-top: 120px;
+  padding-block: 120px;
 }
 #projects{
   margin: 72px auto 144px;
 }
 #services{
-  margin: 88px auto 120px;
+  margin: 0px auto;
 }
-
-
-.tags, .cards{
+#contato{
+  margin: 0px auto;
+  padding-top: 128px;
+}
+.icon{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 94px;
+}
+.tags, .cards{  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  span{
+    font: var(--p);
+    color: var(--gray-200);
+  }
 }
 .tag{
   display: flex;
@@ -45,7 +58,7 @@
 }
 .card{
   display: flex;
-  width: 280px;
+  width: 308px;
   padding: 20px;
   flex-direction: column;
   justify-content: center;
@@ -54,4 +67,41 @@
 
   border-radius: 12px;
   border: 2px solid var(--gray-500);
+}
+.projects{
+  display: flex;
+  width: 1040px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.socials{
+  display: flex;
+  width: 400px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  border-radius: 8px;
+  background: var(--gray-400);
+  img{
+    height: 28px;
+    width: 28px;
+    flex-shrink: 0px;
+  }
+  p{
+    color: var(--gray-200);
+    width: 288px;
+  }
+}
+.socials:hover{
+  border: 1.5px solid var(--blue);
+  background: var(--Base-gray-400);
+}
+.cardprojects:hover{
+  border: 1.5px solid var(--Base-gray-300, #878EA1);
+  background: var(--Base-gray-400, #292C34);
 }
