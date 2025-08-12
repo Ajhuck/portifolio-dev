@@ -1,6 +1,11 @@
 #info{
   padding-block: 120px;
 }
+#description{
+  p{
+    text-align: center;
+  }
+}
 #projects{
   margin: 72px auto 144px;
 }
